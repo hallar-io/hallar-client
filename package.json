@@ -1,0 +1,34 @@
+{
+  "name": "lisk-module",
+  "version": "0.0.1",
+  "description": "A lisk module that enables github connectivity",
+  "main": "dist-node/index.js",
+  "dependencies": {
+    "axios": "0.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "ts-node": "^8.9.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "prebuild": "rm -r dist-node | rm tsconfig.tsbuildinfo | mkdir dist-node | true",
+    "build": "tsc",
+    "build:check": "node -e \"require('./dist-node')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hallar-io/lisk-module.git"
+  },
+  "keywords": [
+    "lisk",
+    "blockchain"
+  ],
+  "author": "Hallar",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hallar-io/lisk-module/issues"
+  },
+  "homepage": "https://github.com/hallar-io/lisk-module#readme"
+}
