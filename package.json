@@ -4,6 +4,7 @@
   "description": "A lisk module that enables github connectivity",
   "main": "dist-node/index.js",
   "dependencies": {
+    "@liskhq/lisk-client": "^5.0.0",
     "axios": "0.21.0"
   },
   "devDependencies": {
